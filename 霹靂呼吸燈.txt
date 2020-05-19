@@ -1,0 +1,28 @@
+// Flag's Block 產生的草稿碼
+
+
+int i;
+uint8_t arr[3]={D0,D3,D4};
+
+// setup() 會先被執行且只會執行一次
+void setup() {
+ 
+}
+// loop() 裡面的程式會不斷重複執行
+void loop() {
+ 
+    for (int j=0;j<3;j++){
+      for (i = 1; i <= 255; i += 17) {
+        analogWrite(arr[j], i);
+        delay(20);
+      }}
+    
+    for (int j=3;j>0;j--){
+      for (i = 255; i >= 1; i -= 17) {
+        analogWrite(arr[j], i);
+        delay(20);
+      }}
+    
+  
+
+}

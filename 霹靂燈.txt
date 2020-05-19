@@ -1,0 +1,26 @@
+// Flag's Block 產生的草稿碼
+
+// setup() 會先被執行且只會執行一次
+void setup() {
+  pinMode(D0, OUTPUT);
+  pinMode(D3, OUTPUT);
+  pinMode(D4, OUTPUT);
+}
+
+// loop() 裡面的程式會不斷重複執行
+void loop() {
+  digitalWrite(D0, HIGH);
+  delay(250);
+  digitalWrite(D0, LOW);
+  digitalWrite(D3, HIGH);
+  delay(250);
+  digitalWrite(D3, LOW);
+  digitalWrite(D4, HIGH);
+  delay(250);
+  digitalWrite(D4, LOW);
+  digitalWrite(D3, HIGH);
+  delay(250);
+  digitalWrite(D3, LOW);
+  digitalWrite(D0, HIGH);
+  delay(250);
+}
